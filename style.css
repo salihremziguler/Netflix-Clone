@@ -1,0 +1,347 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.seperation{
+  border: 3px solid rgb(54, 54, 54);
+}
+
+
+/* Main */
+
+.main{
+  background-image: url("images/banner.jpg");
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 644px;
+  position: relative;
+
+}
+
+.main .box{
+position: absolute;
+top: 0;
+width: 100%;
+height: 644px;
+background-color: black;
+opacity: 0.6;
+
+}
+
+/* navbar */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 60vw;
+  margin: auto;
+}
+
+.nav img {
+  width: 130px;
+  position: relative;
+  z-index: 10;
+}
+
+.nav button{
+  position: relative;
+  z-index: 10;
+}
+
+
+.btn {
+  padding: 3px 8px;
+  background-color: rgba(248, 243, 243, 0.0213);
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.btn-red:hover {
+  background-color: rgba(248, 243, 243, 0.0213);
+}
+
+.hero {
+  color: white;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 0 30px;
+  height: calc(100% - 100px);
+
+}
+
+
+
+.box-title{
+  font-size: 48px;
+  text-align: center;
+  font-weight: bolder;
+
+}
+
+
+.box-desc{
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+
+}
+
+.box-button{
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hero-buttons{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.hero-buttons input{
+  padding: 7px 101px 8px 14px;
+  font-size: 12px;
+  background-color: rgba(23,23,23,0.7);
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 4px;
+
+}
+
+.hero-buttons button{
+  padding: 8px 24px;
+  font-size: 18px;
+}
+
+
+/* Info Area */
+
+.info-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+
+}
+
+.info-area h1{
+  font-size: 48px;
+  font-weight: bolder;
+
+}
+
+.info-area p{
+  font-size: 24px;
+  margin-top: 10px;
+
+}
+
+
+
+.secImg{
+  position: relative;
+
+}
+
+.secImg img{
+  width: 555px;
+  position: relative;
+  z-index: 10;
+
+}
+
+.secImg video{
+  position: absolute;
+  top: 50px;
+  right: 10px;
+}
+
+
+/* Faq */
+
+.faq{
+  padding: 30px;
+}
+
+.faq h2{
+  font-size: 48px;
+  text-align: center;
+
+
+}
+
+.faqbox{
+  background-color: #272727;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  margin: 34px auto;
+  cursor: pointer;
+  max-width: 60vw;
+  transition: all 0.4s;
+
+
+}
+
+.faqbox:hover{
+  background-color: rgba(23,23,23,0.7);
+  
+}
+
+
+/* Footer */
+
+.footer{
+  max-width: 60vw;
+  margin: auto;
+  margin-bottom: 100px;
+
+}
+
+.footer .questions{
+  padding: 34px 0;
+  font-size: 25px;
+
+}
+
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer .footer-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container .footer-item a{
+  color: #ffff;
+  font-size: 18px;
+  margin-top: 20px;
+
+}
+
+
+
+/* Responsive  */
+
+@media(max-width:1000px)
+{
+  .info-area{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+  .info-area h1{
+    margin: 20px auto;
+
+
+  }
+  
+  .info-area p{
+
+    margin-bottom: 20px;
+
+  }
+}
+
+@media(max-width:800px){
+
+  .info-area{
+    text-align: center;
+  }
+
+  .info-area h1{
+    font-size: 30px;
+    margin-top: 40px;
+
+  }
+
+
+  .info-area p{
+    font-size: 20px;
+    margin-bottom: 20px;
+
+  }
+
+  .secImg {
+    position: relative;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  .secImg img{
+    width: 100%;
+    height: auto;
+  }
+
+  .secImg video{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    
+  }
+
+}
+
+@media(max-width:500px)
+{
+  .secImg{
+    width: 100%;
+
+  }
+
+  .secImg video{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+  }
+}
+
+
+
+
+
